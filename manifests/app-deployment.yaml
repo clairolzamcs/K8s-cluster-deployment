@@ -1,7 +1,7 @@
 apiVersion: apps/v1
-kind: ReplicaSet
+kind: Deployment
 metadata:
-  name: app-rs
+  name: app-deployment
   namespace: app
   labels:
     app: employee
@@ -16,7 +16,7 @@ spec:
         app: employee
     spec:
       containers:
-      - name: app-rs
+      - name: app-deployment
         image: 009147451403.dkr.ecr.us-east-1.amazonaws.com/prod-app:6491ac94a7b01e0286f7e2c630ef41fcb67aeca2
         env:
         - name: DBHOST

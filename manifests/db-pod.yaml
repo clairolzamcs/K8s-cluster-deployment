@@ -16,6 +16,6 @@ spec:
             name: db-credentials
             key: password
     ports:
-      - containerPort: 3306
+    - containerPort: 3306
   dnsPolicy: ClusterFirst
   restartPolicy: Always
