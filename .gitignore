@@ -1,0 +1,19 @@
+# exclude git and terraform sources
+.git
+.terraform
+.terraform.lock.hcl
+
+# Local .terraform directories
+**/.terraform/*
+
+# .tfstate files
+*.tfstate
+*.tfstate.*
+
+# Crash log files
+crash.log
+
+# Keys
+assignment2*
+*.pub
+
