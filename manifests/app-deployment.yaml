@@ -20,7 +20,7 @@ spec:
         image: 009147451403.dkr.ecr.us-east-1.amazonaws.com/prod-app:6491ac94a7b01e0286f7e2c630ef41fcb67aeca2
         env:
         - name: DBHOST
-          value: "10.244.0.5"
+          value: "db-service.db.svc.cluster.local"
         - name: DBPORT
           value: "3306"
         - name: DATABASE
@@ -38,6 +38,6 @@ spec:
         - name: APP_COLOR
           value: "blue"
         ports:
-        - containerPort: 80
+        - containerPort: 8080
       dnsPolicy: ClusterFirst
       restartPolicy: Always
