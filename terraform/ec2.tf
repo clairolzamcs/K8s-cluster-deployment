@@ -37,7 +37,8 @@ resource "aws_instance" "k8s" {
 
   vpc_security_group_ids = [
     module.ec2_sg.security_group_id,
-    module.dev_ssh_sg.security_group_id
+    module.dev_ssh_sg.security_group_id,
+    module.ec2_all.security_group_id
   ]
   iam_instance_profile = "LabInstanceProfile"
 
