@@ -8,7 +8,7 @@ metadata:
 spec:
   containers:
   - name: db
-    image: 009147451403.dkr.ecr.us-east-1.amazonaws.com/prod-db:6491ac94a7b01e0286f7e2c630ef41fcb67aeca2
+    image: 009147451403.dkr.ecr.us-east-1.amazonaws.com/prod-db:40d03e2855d21781c0a5c47b6e8361669effde69
     env:
       - name: MYSQL_ROOT_PASSWORD
         valueFrom:
