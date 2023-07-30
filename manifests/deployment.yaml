@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: flask-app
+  namespace: app
+  labels:
+    app: flask-app
+    component: greeting
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: flask-app
+      component: greeting
+  template:
+    metadata:
+      labels:
+        app: flask-app
+        component: greeting
+    spec:
+      containers:
+      - name: flask-app
+        image: 009147451403.dkr.ecr.us-east-1.amazonaws.com/prod-app:manualpush
+        ports:
+        - containerPort: 5000
