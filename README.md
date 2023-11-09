@@ -163,4 +163,3 @@ e.	The output of above will be used in our secret manifest to be applied in both
  
 	 
 I thought maybe the app was not able to communicate to the DB. So I changed the DBHOST to point to the db service’s fully qualified domain name db-service.db.svc.cluster.local
-![image](https://github.com/clairolzamcs/CLO835-Assignment2/assets/84026627/7f1e6cb5-8e09-4484-935a-d2106bc8fcd5)
